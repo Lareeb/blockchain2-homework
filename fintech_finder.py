@@ -79,9 +79,9 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # From `crypto_wallet.py import the functions generate_account, get_balance,
 #  and send_transaction
 # YOUR CODE HERE
-from crypto_walletHW import generate_account
-from crypto_walletHW import get_balance
-from crypto_walletHW import send_transaction
+from crypto_wallet import generate_account
+from crypto_wallet import get_balance
+from crypto_wallet import send_transaction
 ################################################################################
 # Fintech Finder Candidate Information
 
@@ -269,7 +269,7 @@ if st.sidebar.button("Send Transaction"):
     # Your `account`, the `candidate_address`, and the `wage` as parameters
     # Save the returned transaction hash as a variable named `transaction_hash`
     # YOUR CODE HERE
-transaction_hash = send_transaction(w3, account, candidate_address, wage)
+    transaction_hash = send_transaction(w3, account, candidate_address, wage)
     # Markdown for the transaction hash
     st.sidebar.markdown("#### Validated Transaction Hash")
 
